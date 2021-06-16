@@ -21,5 +21,8 @@ public class App {
     public String hola(@RequestParam(value="nombre", defaultValue = "World") String nombre){
         System.out.println("Hola!");
         return String.format("Hola %s!", nombre);
+
+        //Petición GET en PostMan en /src/main/java/resources/
+
     }
 }

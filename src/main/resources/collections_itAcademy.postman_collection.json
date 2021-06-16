@@ -11,17 +11,53 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://restcountries.eu/rest/v2/lang/es",
-					"protocol": "https",
+					"raw": "localhost:8080/?nombre=David",
 					"host": [
-						"restcountries",
-						"eu"
+						"localhost"
 					],
+					"port": "8080",
 					"path": [
-						"rest",
-						"v2",
-						"lang",
-						"es"
+						""
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "David"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticion GET con entorno local con variable en path",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}{{port}}?nombre=David",
+					"host": [
+						"{{IP}}{{port}}"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "David"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticion GET con entorno local ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{IP}}{{port}}",
+					"host": [
+						"{{IP}}{{port}}"
 					]
 				}
 			},
